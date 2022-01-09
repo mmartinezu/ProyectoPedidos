@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Pedido: 35"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/black"
+        android:id="@+id/txtIdPedido" />
+
+    <TextView
+        android:text="Fecha"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_below="@id/txtIdPedido"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/txtFechaPedido" />
+
+    <TextView
+        android:text="REPARTIDOR: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_below="@id/txtEstadoPedido"
+        android:layout_toRightOf="@id/txtIdPedido"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtRepartidorPedido" />
+
+    <TextView
+        android:text="ESTADO: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_below="@id/txtTotalPedido"
+        android:layout_toRightOf="@id/txtIdPedido"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtEstadoPedido" />
+
+    <TextView
+        android:text="TOTAL =  "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/txtIdPedido"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtTotalPedido" />
+
+    <ImageView
+        android:src="@drawable/carro"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imgCarro"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

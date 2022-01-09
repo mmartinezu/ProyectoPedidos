@@ -2,11 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
+
     <TextView
-        android:text="Login"
+        android:text="Nuevo Cliente"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,29 +15,37 @@
         android:minHeight="25px"
         android:id="@+id/textView1"
         android:textAlignment="center"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="60dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:textSize="28dp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtUsuario"
-        android:hint="Usuario"
+        android:id="@+id/txtRegistrarNombre"
+        android:hint="Nombre"
         android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRegistrarUsuario"
+        android:hint="Usuario"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp" />
     <EditText
         android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtContrasena"
+        android:id="@+id/txtRegistrarContrasena"
         android:hint="Contraseña"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="20dp" />
     <Button
-        android:text="Ingresar"
+        android:text="Registrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnIngresar"
@@ -44,13 +53,14 @@
         android:layout_marginRight="50dp"
         android:layout_marginTop="50dp" />
     <Button
-        android:text="Registrarse"
+        android:text="Cancelar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnRegistrarse"
+        android:id="@+id/btnCancelar"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="70dp" />
+        android:layout_marginBottom="30dp" />
+
 
 </LinearLayout>
